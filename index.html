@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мария Едыгарова | Мастер маникюра Москва</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5eae4 0%, #e8d3cb 100%);
+            color: #4a3e3d;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px 10px;
+        }
+        .container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(163, 137, 131, 0.2);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px auto;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #2b2120;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #8c7673;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #ffffff;
+        }
+        .btn-telegram {
+            background-color: #0088cc;
+            color: #ffffff;
+        }
+        .btn-max {
+            background-color: #5d25fa;
+            color: #ffffff;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2b2120;
+            margin-bottom: 20px;
+            text-align: left;
+            border-left: 4px solid #d4b2a7;
+            padding-left: 10px;
+        }
+        .price-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+            margin-bottom: 35px;
+        }
+        .price-item {
+            display: flex;
+            align-items: center;
+            background: #faf6f5;
+            padding: 12px;
+            border-radius: 16px;
+            gap: 12px;
+        }
+        .price-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #eee;
+        }
+        .price-info {
+            flex-grow: 1;
+        }
+        .price-name {
+            font-weight: 600;
+            font-size: 15px;
+            color: #2b2120;
+            margin-bottom: 2px;
+        }
+        .price-desc {
+            font-size: 12px;
+            color: #8c7673;
+            line-height: 1.3;
+        }
+        .price-val {
+            font-weight: 700;
+            font-size: 16px;
+            color: #a87e70;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+        .footer-address {
+            background: #fdfcfc;
+            border: 1px dashed #d4b2a7;
+            border-radius: 16px;
+            padding: 15px;
+            font-size: 14px;
+            color: #5c4d4b;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .footer-address strong {
+            color: #2b2120;
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Фото профиля -->
+    <img src="avatar.jpg" alt="Мария Едыгарова" class="avatar" onerror="this.src='https://yandex.net';">
+    
+    <h1>Мария Едыгарова</h1>
+    <div class="subtitle">Мастер маникюра</div>
+
+    <!-- Кнопки связей -->
+    <div class="links-container">
+        <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">
+            Записаться в WhatsApp
+        </a>
+        <a href="https://t.me" target="_blank" class="btn btn-telegram">
+            Наш Telegram-канал
+        </a>
+        <a href="https://max.ru" target="_blank" class="btn btn-max">
+            Связаться в MAX
+        </a>
+    </div>
+
+    <!-- Прайс-лист -->
+    <div class="section-title">Услуги и цены</div>
+    <div class="price-list">
+        
+        <div class="price-item">
+            <img src="https://yandex.net" class="price-img" alt="Маникюр френч">
+            <div class="price-info">
+                <div class="price-name">Маникюр френч</div>
+                <div class="price-desc">Маникюр с покрытием гель лак + френч</div>
+            </div>
+            <div class="price-val">4 200 ₽</div>
+        </div>
+
+        <div class="price-item">
+            <img src="https://yandex.net" class="price-img" alt="Наращивание ногтей">
+            <div class="price-info">
+                <div class="price-name">Наращивание ногтей</div>
+                <div class="price-desc">Моделирование и удлинение ногтевой пластины</div>
+            </div>
+            <div class="price-val">6 000 ₽</div>
+        </div>
+
+        <div class="price-item">
+            <img src="https://yandex.net" class="price-img" alt="Полное снятие + маникюр">
+            <div class="price-info">
+                <div class="price-name">Полное снятие + маникюр</div>
+                <div class="price-desc">Полное снятие материала + гигиенический маникюр</div>
+            </div>
+            <div class="price-val">2 100 ₽</div>
+        </div>
+
+        <div class="price-item">
+            <img src="https://yandex.net" class="price-img" alt="Полное снятие">
+            <div class="price-info">
+                <div class="price-name">Полное снятие</div>
+                <div class="price-desc">Полное снятие без последующего покрытия</div>
+            </div>
+            <div class="price-val">500 ₽</div>
+        </div>
+
+        <div class="price-item">
+            <img src="https://yandex.net" class="price-img" alt="Маникюр с покрытием гель лак">
+            <div class="price-info">
+                <div class="price-name">Маникюр с покрытием гель лак</div>
+                <div class="price-desc">Маникюр с однотонным покрытием гель лак. Входит снятие, укрепление жестким гелем, мелкий ремонт при необходимости</div>
+            </div>
+            <div class="price-val">3 400 ₽</div>
+        </div>
+
+        <div class="price-item">
+            <img src="https://yandex.net" class="price-img" alt="Гигиенический маникюр">
+            <div class="price-info">
+                <div class="price-name">Гигиенический маникюр</div>
+                <div class="price-desc">Комбинированный маникюр без покрытия</div>
+            </div>
+            <div class="price-val">1 700 ₽</div>
+        </div>
+
+    </div>
+
+    <!-- Адрес -->
+    <div class="footer-address">
+        <strong>📍 Место приема:</strong>
+        Москва, ул. Тагильская, 4В
+    </div>
+</div>
+
+</body>
+</html>
