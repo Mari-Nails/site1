@@ -29,13 +29,18 @@
             padding: 30px 20px;
             text-align: center;
         }
+        .avatar-box {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px auto;
+            position: relative;
+        }
         .avatar {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
             display: block;
-            margin: 0 auto 15px auto;
             border: 4px solid #fff;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
             background-color: #faf6f5;
@@ -138,7 +143,7 @@
             flex-grow: 1;
         }
         .price-name {
-        font-weight: 600;
+            font-weight: 600;
             font-size: 15px;
             color: #2b2120;
             margin-bottom: 2px;
@@ -160,8 +165,10 @@
 <body>
 
 <div class="container">
-    <!-- Встроенная ссылка на вашу личную аватарку -->
-    <img src="https://postimg.cc" alt="Мария Едыгарова" class="avatar">
+    <!-- Блок вашей личной аватарки -->
+    <div class="avatar-box">
+        <img src="https://postimg.cc" alt="Мария Едыгарова" class="avatar">
+    </div>
     
     <h1>Мария Едыгарова</h1>
     <div class="subtitle">Мастер маникюра</div>
