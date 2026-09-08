@@ -30,14 +30,14 @@
             text-align: center;
         }
         .avatar {
-            width: 110px;
-            height: 110px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             display: block;
             margin: 0 auto 15px auto;
             border: 4px solid #fff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
             background-color: #faf6f5;
         }
         h1 {
@@ -57,7 +57,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            margin-bottom: 35px;
+            margin-bottom: 25px;
         }
         .btn {
             display: flex;
@@ -87,6 +87,22 @@
             background-color: #5d25fa;
             color: #ffffff;
         }
+        .header-address {
+            background: #faf6f5;
+            border: 1px dashed #d4b2a7;
+            border-radius: 16px;
+            padding: 15px;
+            font-size: 14px;
+            color: #5c4d4b;
+            line-height: 1.5;
+            text-align: left;
+            margin-bottom: 35px;
+        }
+        .header-address strong {
+            color: #2b2120;
+            display: block;
+            margin-bottom: 4px;
+        }
         .section-title {
             font-size: 18px;
             font-weight: 700;
@@ -101,7 +117,6 @@
             flex-direction: column;
             gap: 15px;
             text-align: left;
-            margin-bottom: 35px;
         }
         .price-item {
             display: flex;
@@ -123,7 +138,7 @@
             flex-grow: 1;
         }
         .price-name {
-            font-weight: 600;
+font-weight: 600;
             font-size: 15px;
             color: #2b2120;
             margin-bottom: 2px;
@@ -140,33 +155,18 @@
             white-space: nowrap;
             margin-left: 10px;
         }
-        .footer-address {
-            background: #fdfcfc;
-            border: 1px dashed #d4b2a7;
-            border-radius: 16px;
-            padding: 15px;
-            font-size: 14px;
-            color: #5c4d4b;
-            line-height: 1.5;
-            text-align: left;
-        }
-        .footer-address strong {
-            color: #2b2120;
-            display: block;
-            margin-bottom: 4px;
-        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Иконка профиля по умолчанию -->
-    <img src="https://unsplash.com" alt="Мария Едыгарова" class="avatar">
+    <!-- Аватарка мастера -->
+    <img src="https://unsplash.com" alt="Мария Едыгарова" class="avatar" onerror="this.src='https://unsplash.com';">
     
     <h1>Мария Едыгарова</h1>
     <div class="subtitle">Мастер маникюра</div>
 
-    <!-- Кнопки связей -->
+    <!-- Кнопки мессенджеров -->
     <div class="links-container">
         <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">
             Записаться в WhatsApp
@@ -177,6 +177,12 @@
         <a href="https://max.ru" target="_blank" class="btn btn-max">
             Связаться в MAX
         </a>
+    </div>
+
+    <!-- Адрес (теперь находится ЗДЕСЬ, перед прайсом) -->
+    <div class="header-address">
+        <strong>📍 Место приема:</strong>
+        Москва, ул. Тагильская, 4В
     </div>
 
     <!-- Прайс-лист -->
@@ -237,12 +243,6 @@
             <div class="price-val">1 700 ₽</div>
         </div>
 
-    </div>
-
-    <!-- Адрес -->
-    <div class="footer-address">
-        <strong>📍 Место приема:</strong>
-        Москва, ул. Тагильская, 4В
     </div>
 </div>
 
